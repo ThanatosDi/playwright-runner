@@ -49,7 +49,7 @@ jobs:
             BROWSER=*
             http_proxy=
             https_proxy=
-          push: false
+          push: true
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           cache-from: |
@@ -92,7 +92,7 @@ jobs:
             BROWSER=${{ matrix.browser }}
             http_proxy=
             https_proxy=
-          push: false
+          push: true
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
           cache-from: |

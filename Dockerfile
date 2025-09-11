@@ -3,6 +3,10 @@ FROM node:22-trixie-slim
 ARG BROWSER
 ENV BROWSER=$BROWSER
 
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright-browsers
+
+RUN mkdir -p $PLAYWRIGHT_BROWSERS_PATH
+
 RUN npm install -g -D @playwright/test@latest
 
 RUN case "${BROWSER}" in \

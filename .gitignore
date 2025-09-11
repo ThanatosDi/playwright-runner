@@ -26,3 +26,11 @@ Temporary Items
 .apdisk
 
 .env
+
+# gemini-cli settings
+.gemini/
+
+# GitHub App credentials
+gha-creds-*.json
+
+.qodo
